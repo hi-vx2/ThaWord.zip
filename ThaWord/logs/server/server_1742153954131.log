@@ -1,0 +1,20 @@
+[STDOUT] Unbundling libraries to C:\discord\ThaWord\SpigotServer\bundler
+[STDOUT] Starting server
+[STDOUT] Loading libraries, please wait...
+[STDOUT] 2025-03-16T19:39:15.326118900Z ServerMain ERROR Unable to delete file C:\discord\ThaWord\SpigotServer\logs\latest.log: java.nio.[STDOUT] file.FileSystemException C:\discord\ThaWord\SpigotServer\logs\latest.log: The process cannot access the file because it is being used by another process
+[STDOUT] [12:39:20] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[STDOUT] [12:39:20] [ServerMain/ERROR]: Failed to start the minecraft server
+[STDOUT] java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75) ~[?:?]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[?:?]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:81) ~[?:?]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72) ~[?:?]
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:303) ~[?:?]
+	at net.minecraft.util.SessionLock.a(SourceFile:37) ~[spigot-1.21.4-R0.1-SNAPSHOT.jar:4457-Spigot-73860e0-f0c8dd3]
+	at net.minecraft.world.level.storage.Convertable$ConversionSession.<init>(Convertable.java:518) ~[spigot-1.21.4-R0.1-SNAPSHOT.jar:4457-Spigot-73860e0-f0c8dd3]
+	at net.minecraft.world.level.storage.Convertable.validateAndCreateAccess(Convertable.java:424) ~[spigot-1.21.4-R0.1-SNAPSHOT.jar:4457-Spigot-73860e0-f0c8dd3]
+	at net.minecraft.server.Main.main(Main.java:174) ~[spigot-1.21.4-R0.1-SNAPSHOT.jar:4457-Spigot-73860e0-f0c8dd3]
+	at org.bukkit.craftbukkit.Main.main(Main.java:215) ~[spigot-1.21.4-R0.1-SNAPSHOT.jar:4457-Spigot-73860e0-f0c8dd3]
+	at org.bukkit.craftbukkit.bootstrap.Main.lambda$run$0(Main.java:60) ~[spigot.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
